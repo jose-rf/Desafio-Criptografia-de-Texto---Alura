@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/img/alura logo.png" type="image/x-icon">
+    <script src="script.js"></script>
+    <title>Criptografia de Texto</title>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <img src="/img/alura logo.png" alt="" class="imagem_logo">
+            <h1 class="texto_inicio">Criptografia de Texto</h>
+        </nav>
+    </header>
+    <main>
+
+        <div class="classe_principal">
+            <h1 class="titulo_da_pagina">Digite seu Texto</h>
+
+            <textarea name="" id="caixa" class="caixa_de_texto"></textarea>
+
+            <div class="caixa_de_aviso">
+                <img src="/img/Group.png" alt="" class="aviso">
+            <p class="mensagem_aviso">Apenas letras minúsculas e sem acento.</p>
+        </div>
+
+        <div class="botoes">
+            <a href="#" class="botao_criptografia" onclick="capturarTexto(), tirarVisibilidade(), criptografar(), textoCriptografadoParaEscrita()">Criptografar</a>
+            <a href="#" class="botao_descriptografia" onclick="descriptografar()">Descriptografar</a>
+        </div>
+        </div>
+
+        
+        <div class="colunaDeCopiar">
+                <div class="caixa_de_descriptografia">
+                <div class="textos" id="textosAlerta">
+                    <p class="textoOriginal" id="txtOriginal"></p>
+                    <p class="mensagem" id="msgUm"><strong>Nenhuma Mensagem Encontrada</strong></p>
+                <p class="mensagem_dois" id="msgDois">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>
+            </div>
+            <a href="#" class="botao_copiar" onclick="copiarTexto()">Copiar</a>
+
+        </div>
+       
+
+        
+
+    </main>
+
+    <footer>
+        <p class="texto_rodape">Desenvolvido por José Rodrigues</p>
+    </footer>
+
+</body>
+</html>

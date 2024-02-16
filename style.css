@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+*, 
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root{
+    --cor-primaria: #486623;
+    --cor-secundaria: #B6C99E;
+    --cor-texto-primaria: #343A40;
+    --cor-texto-secundaria: #495057;
+}
+
+body{
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+}
+main{
+    display: flex;
+    gap: 5rem;
+}
+
+nav{
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    border-bottom: 3px solid var(--cor-primaria) ;
+    width: 100%;
+    padding: 1rem 1rem;
+    display: flex;
+    text-align: center;
+    gap: 7.5rem;
+}
+
+.texto_inicio{
+    font-size: 1.25rem;
+    justify-content: center;
+    align-items: center;
+    color: var(--cor-primaria);
+}
+
+.imagem_logo{
+    width: 1.25rem;
+}
+
+.titulo_da_pagina{
+    font-size: 1.37rem;
+    color: var(--cor-primaria);
+}
+
+.classe_principal{
+    margin-left: 10rem;
+    margin-top: 2rem;
+}
+
+.caixa_de_texto{
+    width: 100%;
+    height: 25rem;
+    margin-top: 2rem;
+    border-radius: 32px;
+    border: 3px solid var(--cor-primaria);
+    box-sizing: border-box; 
+    display: block; 
+    width: 100%; 
+    padding: 10px; 
+    margin-top: 5px;
+    resize: vertical;
+    overflow-y: auto;
+}
+
+.caixa_de_aviso{
+    margin-top: 2rem;
+    display: flex;
+    margin-right: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.aviso{
+    width: 1rem;
+    height: 1rem;
+}
+
+.mensagem_aviso{
+    color: var(--cor-texto-secundaria);
+    font-size: 0.7rem;
+}
+
+.botoes{
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    font-size: 16px;
+}
+
+.botao_criptografia, .botao_descriptografia{
+    display: flex;
+    width: 14.5rem;
+    height: 3rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+}
+
+.botao_criptografia:hover, .botao_descriptografia:hover{
+    background-color: var(--cor-secundaria);
+}
+
+.botao_criptografia{
+    background-color: var(--cor-primaria);
+    color: whitesmoke;
+}
+
+.botao_descriptografia{
+    border: 3px solid var(--cor-primaria);
+    color: var(--cor-primaria);
+}
+
+.colunaDeCopiar{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.caixa_de_descriptografia{
+    border: 3px solid var(--cor-primaria);
+    border-radius: 32px;
+    width: 30rem;
+    height: 25rem;
+    margin-top: 4rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textos{
+    margin: 1rem 1rem 1rem 1rem;
+    text-align: center;
+    justify-content: flex-start;
+    word-wrap: break-word;
+}
+
+.textoOriginal{
+    word-wrap: break-word;
+}
+
+.mensagem{
+    color: var(--cor-texto-primaria);
+}
+
+.mensagem_dois{
+    color: var(--cor-texto-secundaria);
+}
+
+.botao_copiar{
+    display: flex;
+    width: 14.5rem;
+    height: 3rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    border: 3px solid var(--cor-primaria);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: var(--cor-primaria);
+}
+
+.botao_copiar:hover{
+    background-color: var(--cor-secundaria);
+}
+
+footer{
+    background-color: var(--cor-primaria);
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: whitesmoke;
+    margin-top: 5rem;
+    font-size: 0.8rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+    main{
+        display: block;
+    }
+
+    .classe_principal{
+        margin-right: 6rem;
+        margin-left: 6rem;
+    }
+
+    .caixa_de_texto{
+        width: 100%;
+    }
+
+    .botoes{
+        display: flex ;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .caixa_de_descriptografia{
+        width: 100%;
+        height: 25rem;
+        margin-top: 2rem;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+    main{
+        display: block;
+    }
+
+    nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .caixa_de_texto{
+        width: 100%;
+    }
+
+    .classe_principal{
+        margin-left: 3.5rem;
+        margin-right: 3.5rem;
+    }
+
+    .botoes{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .botao_criptografia, .botao_descriptografia{
+        font-size: 0.8rem;
+    }
+
+    .caixa_de_descriptografia{
+        width: 100%;
+        height: 25rem;
+    }
+
+  }
